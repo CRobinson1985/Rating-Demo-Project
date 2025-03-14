@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Overpass;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h2 {
+  color: white;
+}
+#main-box {
+  background: linear-gradient(#2d2a35, #29262f, #1f1e25);
+  height: 385px;  
+  width:  385px;
+  border-radius: 8%;
+  padding: 1.6em;
+  display: block;
+}
+
+.circles {
+  background-color: hsl(240, 6%, 21%);
+  color: hsl(217, 12%, 63%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#ratings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#submit-button {
+  border-radius: 25px;
+  display:flex;
+  color: hsl(240, 4%, 20%);
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(25, 97%, 53%);
+  height: 50px;
+  width: 100%;
+  
+}
+#submit-button:hover {
+  background: white;
+  cursor: pointer;
+}
+.rbutton:hover {
+  background: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
+.rbutton.selected {
+  background: white;
+  color: hsl(216, 12%, 8%);
+}
+button {
+  border: 0px;
+  font-size: 15px;
+}
+#thank-you-box {
+  background: linear-gradient(#2d2a35, #29262f, #1f1e25);
+  height: 385px;  
+  width:  385px;
+  border-radius: 8%;
+  padding: 1.6em;
+  align-items: center;
+  text-align: center;
+  display: block;
+  
+}
+#rating-text {
+  margin: 0 auto;
+  display: block;
+  background-color: hsl(240, 6%, 21%);
+  color: hsl(25, 97%, 53%);
+  height: 26px;
+  width: 175px;
+  border-radius: 13px;
+  
+}
