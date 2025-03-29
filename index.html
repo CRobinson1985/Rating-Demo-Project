@@ -1,76 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Interactive rating component</title>
-  <script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
     
-  </script>
-  
-  
-</head>
-<body>
-
-  <!-- Rating state start -->
-  <div id="main-box">
-    <div id="star-box" class="circles"><img src="images/icon-star.svg" /></div>
-    <br><br>
-    <div id="text-parts">
-      <h2>How did we do?</h2>
-        <br>
-      <p>
-Please let us know how we did with your support
-request. All feedback is appreciated to help us 
-improve our offering!
-      </p>
-    </div>
-      <br>
-    <div id="ratings">
-      <button type="button" id="rating1" class="circles rbutton btn" onclick="toggleButton(this)">1</button>
-      <button type="button" id="rating2" class="circles rbutton btn" onclick="toggleButton(this)">2</button>
-      <button type="button" id="rating3" class="circles rbutton btn" onclick="toggleButton(this)">3</button>
-      <button type="button" id="rating4" class="circles rbutton btn" onclick="toggleButton(this)">4</button>
-      <button type="button" id="rating5" class="circles rbutton btn" onclick="toggleButton(this)">5</button>
-    </div>
-    <br>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div id="main-box">
+      <div id="star-box" class="circles">
+        <img src="images/icon-star.svg" />
+      </div>
+      <br /><br />
+      <div id="text-parts">
+        <h2>How did we do?</h2>
+        <br />
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <br />
+      <div id="ratings">
+        <button
+          type="button"
+          id="rating1"
+          class="circles rbutton btn"
+          onclick="toggleButton(this)"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          id="rating2"
+          class="circles rbutton btn"
+          onclick="toggleButton(this)"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          id="rating3"
+          class="circles rbutton btn"
+          onclick="toggleButton(this)"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          id="rating4"
+          class="circles rbutton btn"
+          onclick="toggleButton(this)"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          id="rating5"
+          class="circles rbutton btn"
+          onclick="toggleButton(this)"
+        >
+          5
+        </button>
+      </div>
+      <br />
       <button type="submit" id="submit-button"><h3>Submit</h3></button>
-    
-  </div>
-  
-  
+    </div>
+    <div id="error-div">
+      Please Select an option between 1 and 5!
+      <div id="error-ok-button">Okay</div>
+    </div>
+    <div id="backdrop"></div>
 
-  <div id="thank-you-box">
-    <div class="ty-box"><img src="images/illustration-thank-you.svg"></div>
-    <br>
-    <div id="rating-text" class="ty-box" name="RATING_TEXT">You selected  of 5</div>
-    <br>
-    <div class="ty-box"><h2>Thank you!</h2></div>
-    <br>
-    <div class="ty-box"><p>We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!</p></div>
-  </div>
+    <div id="thank-you-box">
+      <div class="ty-box"><img src="images/illustration-thank-you.svg" /></div>
+      <br />
+      <div id="rating-text" class="ty-box" name="RATING_TEXT">
+        You selected of 5
+      </div>
+      <br />
+      <div class="ty-box"><h2>Thank you!</h2></div>
+      <br />
+      <div class="ty-box">
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
 
-
-  
-  
- 
-  
-
-  
-
-  
-  
-  <div class="attribution">
-    <!--Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <div class="attribution">
+      <!--Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.-->
-  </div>
-  
-</body>
-<script src="script.js"></script>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
