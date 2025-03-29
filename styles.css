@@ -142,10 +142,10 @@ button {
 }
 @media (orientation: portrait) and (max-width: 450px){
   #main-box {
-    width: 95%;
+    width: 95vw;
   }
   #thank-you-box {
-    width: 95%;
+    width: 95vw;
   }
 }
 @media (orientation: landscape) and (max-height: 450px){
@@ -160,15 +160,18 @@ button {
 }
 @media (orientation: portrait) and (min-height: 451px) {
   #main-box {
-    width: 450px;
+    width: 95vw;
+    
   }
   #thank-you-box {
-    width: 450px;
+    width: 95vw;
+    
   }
 }
-@media (orientation: landscape) and (min-height: 451px) {
+@media (orientation: landscape) and (min-height: 700px) {
   #main-box {
-    width: 450px;
+    width: 50vh;
+    
   }
   #thank-you-box {
     width: 450px;
@@ -178,4 +181,7 @@ button {
   body {
     font-size: 13px;
   }
+}
+@media () {
+
 }
