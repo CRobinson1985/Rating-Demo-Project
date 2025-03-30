@@ -9,21 +9,20 @@ body {
   font-size: 15px;
   background-color: hsl(216, 12%, 8%);
   color: hsl(217, 12%, 63%);
-  display:flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
+
 h2 {
   color: white;
 }
 #main-box {
   background: linear-gradient(#2d2a35, #29262f, #1f1e25);
-  
-  
   border-radius: 8%;
   padding: 1.6em;
-  display: block;
+    
 }
 
 .circles {
@@ -140,48 +139,57 @@ button {
   
 
 }
-@media (orientation: portrait) and (max-width: 450px){
+@media (max-width: 600px){
   #main-box {
     width: 95vw;
-  }
-  #thank-you-box {
-    width: 95vw;
-  }
-}
-@media (orientation: landscape) and (max-height: 450px){
-  #main-box {
-    height: 95vh;
-    width: 95vh;
-  }
-  #thank-you-box {
-    height: 95vh;
-    width: 95vh;
-  }
-}
-@media (orientation: portrait) and (min-height: 451px) {
-  #main-box {
-    width: 95vw;
+    
     
   }
   #thank-you-box {
     width: 95vw;
     
   }
+  
 }
-@media (orientation: landscape) and (min-height: 700px) {
+@media(min-width: 601px){
+  
   #main-box {
-    width: 50vh;
     
+    width: 94vh;
+  }
+  #thank-you-box {
+
+    width: 94vh;
+  }
+}
+@media(min-width: 768px) {
+  #main-box {
+    width: 400px;
+    font-size: 1.1em;
+  }
+  #thank-you-box {
+    width: 400px;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 990px) {
+  #main-box {
+    
+    width: 450px;
+    font-size: 1.3em;
   }
   #thank-you-box {
     width: 450px;
+    font-size: 1.3em;
   }
 }
-@media (orientation: landscape) and (max-height: 400px) {
-  body {
-    font-size: 13px;
+@media (min-width: 1200px) {
+  #main-box {
+    width: 450px;
+    font-size: 1.3em;
   }
-}
-@media () {
-
-}
+  #thank-you-box {
+    width: 450px;
+    font-size: 1.3em;
+  }
+} 
